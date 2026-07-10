@@ -2,7 +2,7 @@
 
 > **Universal tool for analyzing molecular docking outputs** — HDOCK, AutoDock Vina, ClusPro, and more.
 
-> 👤 **Author**: CliffVale (bhriguz6@gmail.com)
+> 👤 **Author**: CliffVale (Bhrigu)
 > 
 > 📅 **Version**: 1.0.0 (July 2026)
 
@@ -12,7 +12,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│  📦 INPUT: Docking results (tar.gz or folder)                      │
+│  📦 INPUT: Docking results (tar.gz or folder)                       │
 │                                                                     │
 │  🔧 PROCESSING:                                                     │
 │    • Parse scores and rankings                                      │
@@ -118,15 +118,15 @@ pymol my_analysis/pymol_visualize.py
 ┌─────────────────────────────────────────────────────────────┐
 │  HDOCK SCORE INTERPRETATION                                 │
 │                                                             │
-│  Score Range        │  Binding Strength   │  Confidence    │
-│  ─────────────────  │  ─────────────────  │  ────────────  │
-│  -300 to -200       │  Excellent          │  High          │
-│  -200 to -150       │  Good               │  Moderate      │
-│  -150 to -100       │  Moderate           │  Low           │
-│  > -100             │  Weak/None          │  Very Low      │
+│  Score Range        │  Binding Strength   │  Confidence     │
+│  ─────────────────  │  ─────────────────  │  ────────────   │
+│  -300 to -200       │  Excellent          │  High           │
+│  -200 to -150       │  Good               │  Moderate       │
+│  -150 to -100       │  Moderate           │  Low            │
+│  > -100             │  Weak/None          │  Very Low       │
 │                                                             │
-│  ⚠️  Scores are relative, not absolute binding affinities  │
-│  ⚠️  Always validate experimentally (SPR, ITC, BLI)        │
+│  ⚠️  Scores are relative, not absolute binding affinities   │
+│  ⚠️  Always validate experimentally (SPR, ITC, BLI)         │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -140,15 +140,15 @@ pymol my_analysis/pymol_visualize.py
 │  → Amino acids on the protein surface that touch the DNA    │
 │                                                             │
 │  How are they identified?                                   │
-│  → Count how often each residue appears in top 10 models   │
+│  → Count how often each residue appears in top 10 models    │
 │  → High frequency = likely real binding site                │
 │                                                             │
 │  Example output:                                            │
-│    TRP67: 10/10 models  ← Key binding residue              │
-│    PHE39: 8/10 models   ← Important for stacking           │
-│    TYR73: 7/10 models   ← Contributing residue             │
+│    TRP67: 10/10 models  ← Key binding residue               │
+│    PHE39: 8/10 models   ← Important for stacking            │
+│    TYR73: 7/10 models   ← Contributing residue              │
 │                                                             │
-│  ⚠️  Residues in >5/10 models are reliable binding sites   │
+│  ⚠️  Residues in >5/10 models are reliable binding sites    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,13 +156,13 @@ pymol my_analysis/pymol_visualize.py
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  PYMOL COLOR SCHEME                                        │
+│  PYMOL COLOR SCHEME                                         │
 │                                                             │
-│  🔵 Gray/White  →  Protein (receptor)                      │
-│  🟠 Orange      →  DNA (ligand)                            │
-│  🟡 Yellow      →  Binding site residues                   │
-│  🟢 Green       →  Hydrogen bonds                          │
-│  🔴 Red spheres →  Phosphate backbone (DNA)                │
+│  🔵 Gray/White  →  Protein (receptor)                       │
+│  🟠 Orange      →  DNA (ligand)                             │
+│  🟡 Yellow      →  Binding site residues                    │
+│  🟢 Green       →  Hydrogen bonds                           │
+│  🔴 Red spheres →  Phosphate backbone (DNA)                 │
 │                                                             │
 │  To customize: Edit pymol_visualize.py                      │
 └─────────────────────────────────────────────────────────────┘
@@ -331,7 +331,7 @@ MIT License
 
 ## Credits
 
-**Author**: CliffVale (bhriguz6@gmail.com)
+**Author**: CliffVale (Bhrigu)
 
 **Built with**: Python, NumPy, Matplotlib
 
