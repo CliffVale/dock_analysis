@@ -1,0 +1,13 @@
+name: dock_analysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - pdbparser
+  - biopython
+  - pip
