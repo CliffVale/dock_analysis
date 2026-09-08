@@ -10,4 +10,5 @@ dependencies:
   - pandas
   - pdbparser
   - biopython
+  - mdanalysis
   - pip
